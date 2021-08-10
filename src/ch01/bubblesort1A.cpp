@@ -37,14 +37,19 @@ void bubblesort1A(int A[], int n)
 int main()
 {
 	int ia[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+	int A[7] = {5, 2, 7, 4, 6, 3, 1};
 
 	cout << "Before bubblesort1A(), ia[10]:\n";
 	showintarr(ia, 10);
-
 	bubblesort1A(ia, 10);
-
 	cout << "After  bubblesort1A(), ia[10]:\n";
 	showintarr(ia, 10);
+
+	cout << "Before bubblesort1A(), A[7]:\n";
+	showintarr(A, 7);
+	bubblesort1A(A, 7);
+	cout << "After  bubblesort1A(), A[7]:\n";
+	showintarr(A, 7);
 
 	return 0;
 }
